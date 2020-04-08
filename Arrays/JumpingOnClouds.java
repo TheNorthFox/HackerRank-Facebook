@@ -1,10 +1,5 @@
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
+package com.afro.Arrays;
+
 
 
 // https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem

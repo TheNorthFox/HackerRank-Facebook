@@ -1,10 +1,5 @@
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
+package com.afro.Arrays;
+
 
 
 // https://www.hackerrank.com/challenges/new-year-chaos/problem
@@ -12,27 +7,29 @@ class MinimumSwaps {
 
     // Complete the minimumSwaps function below.
     static void minimumSwaps(int[] q) {
-        for(int i=0;i<q.length;i++){
-            if((q[i] - (i+1)) > 2){
+    	int i = 0;
+        int swaps = 0;
+        while (i < q.length) {
+            int j = i;
+
+            if (q[i] - (i + 1) > 2) {
+//                System.out.println(String.format("currentValue: %d, currentIndex: %d", q[i], i));
                 System.out.println("Too chaotic");
-                return; 
+                return;
             }
-        }
-               
-        //now we just need to count number of Swaps
-        int swaps=0;
-        for(int i=0;i< q.length;i++){
-            for(int j=i+1;j<q.length;j++){
-                if(q[i] > q[j]){ 
-                    int tmp=q[j];
-                    q[j]=q[i];
-                    q[i]=tmp;
-                    swaps++;
-                }
+
+            while (j > 0 && q[j] < q[j -1]) {
+                // swap
+                int tmp = q[j];
+                q[j] = q[j - 1];
+                q[j - 1] = tmp;
+                j--;
+                swaps++;
             }
+            i++;
         }
-        
         System.out.println(swaps);
+
 
     }
 

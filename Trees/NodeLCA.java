@@ -1,5 +1,5 @@
-import java.util.*;
-import java.io.*;
+package com.afro.Trees;
+
 
 // https://www.hackerrank.com/challenges/binary-search-tree-lowest-common-ancestor/problem
 class Node {

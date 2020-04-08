@@ -1,13 +1,8 @@
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
+package com.afro.Arrays;
+
+
 
 /**
- 
 
 Given a 6x6 2D Array, arr:
 

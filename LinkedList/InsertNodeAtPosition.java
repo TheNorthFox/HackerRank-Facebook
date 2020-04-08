@@ -1,10 +1,11 @@
-package com.afro.Trees;
+package com.afro.LinkedList;
 
 import java.io.*;
 
 
-// https://www.hackerrank.com/challenges/find-the-merge-point-of-two-joined-linked-lists/problem
-public class FindMergeNode {
+// https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list/problem
+
+public class InsertNodeAtPosition {
 
     static class SinglyLinkedListNode {
         public int data;
@@ -52,7 +53,7 @@ public class FindMergeNode {
 
 
 
-    // Complete the findMergeNode function below.
+    // Complete the insertNodeAtPosition function below.
 
     /*
      * For your reference:
@@ -63,23 +64,23 @@ public class FindMergeNode {
      * }
      *
      */
-    static int findMergeNode(SinglyLinkedListNode head1, SinglyLinkedListNode head2) {
-        
-        SinglyLinkedListNode current1 = head1;
-        SinglyLinkedListNode current2 = head2;
-        while (current1 != current2) {
-            if (current1.next == null) {
-                current1 = head2;
-            } else {
-                current1 = current1.next;
-            }
-            if (current2.next == null) {
-                current2 = head1;
-            } else {
-                current2 = current2.next;
-            }
-        }
-        return current2.data;
+    static SinglyLinkedListNode insertNodeAtPosition(SinglyLinkedListNode head, int data, int position) {
 
+        int index = 0;
+        SinglyLinkedListNode newNode = new SinglyLinkedListNode(data);
+        if (position == 0){
+            newNode.next = head;
+            return newNode;
+        } else {
+            index = 1;
+            SinglyLinkedListNode currentNode = head;
+            while (currentNode.next != null && index < position){
+                currentNode = currentNode.next;
+                index++;
+            }
+            newNode.next = currentNode.next;
+            currentNode.next = newNode;
+        }
+        return head;
     }
 }

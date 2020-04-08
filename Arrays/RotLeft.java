@@ -1,10 +1,5 @@
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
+package com.afro.Arrays;
+
 
 /*
 A left rotation operation on an array shifts each of the array's elements  unit to the left. For example, if 2 left rotations 
@@ -44,7 +39,7 @@ When we perform d=4 left rotations, the array undergoes the following sequence o
 
 
 */
-public class Solution {
+public class RotLeft {
 
 // 23451 --> 34512 --> 45123 --> 51234
 

@@ -1,10 +1,4 @@
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
+package com.afro.Strings;
 
 /*
  * Alice is taking a cryptography class and finding anagrams to be very useful. We consider two strings 
@@ -65,7 +59,7 @@ import java.util.regex.*;
  * We must delete 4 characters to make both strings anagrams, so we print 4 on a new line.
  */
  
-public class MakeAnangram {
+public class MakeAnagram {
 
 
 
@@ -104,7 +98,7 @@ public class MakeAnangram {
 
 		String a = "bugexikjevtubidpulaelsbcqlupwetzyzdvjphn";
 		String b = "lajoipfecfinxjspxmevqxuqyalhrsxcvgsdxxkacspbchrbvvwnvsdtsrdk";
-		int result = MakingAnagrams.makeAnagram(a, b);
+		int result = MakeAnagram.makeAnagram(a, b);
 		//int result = MakingAnagrams.makeAnagram("showman", "woman");
 		
 		System.out.println("result: "+result);

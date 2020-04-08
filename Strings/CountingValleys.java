@@ -1,3 +1,5 @@
+package com.afro.Strings;
+
 /**
  *  FB: Q3
  *  During a walk a hiker takes n steps.

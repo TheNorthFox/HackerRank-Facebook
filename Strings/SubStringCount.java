@@ -1,14 +1,9 @@
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
+package com.afro.Strings;
+
 
 // https://www.hackerrank.com/challenges/special-palindrome-again/problem
 
-public class SubstrCount {
+public class SubStringCount {
 
     // Complete the substrCount function below.
     static long substrCount(int n, String s) {

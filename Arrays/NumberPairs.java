@@ -1,10 +1,10 @@
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
+package com.afro.Arrays;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.Scanner;
 
 /**
  * FB Q1:
@@ -40,8 +40,8 @@ class NumberPairs {
 
 
     }
-}
-public class Solution {
+
+
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
@@ -60,7 +60,7 @@ public class Solution {
             ar[i] = arItem;
         }
 
-        int result = Result.numberPairs(n, ar);
+        int result = NumberPairs.numberPairs(n, ar);
 
         bufferedWriter.write(String.valueOf(result));
         bufferedWriter.newLine();

@@ -1,21 +1,11 @@
-import java.util.*;
-import java.io.*;
+package com.afro.Trees;
+
+
 
 
 //  Hackerrank question: https://www.hackerrank.com/challenges/tree-height-of-a-binary-tree/problem
-class Node {
-    Node left;
-    Node right;
-    int data;
-    
-    Node(int data) {
-        this.data = data;
-        left = null;
-        right = null;
-    }
-}
 
-class Solution {
+public class Height {
 
 	/*
     class Node 

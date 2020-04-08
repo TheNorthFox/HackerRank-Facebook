@@ -1,3 +1,5 @@
+package com.afro.Strings;
+
 import java.util.Arrays;
 
 //sort an array and determine how many toys can be purchased for a given budget
