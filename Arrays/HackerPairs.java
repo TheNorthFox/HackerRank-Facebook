@@ -10,21 +10,23 @@ import java.util.Set;
 public class HackerPairs {
 
 	static int pairs(int k, int[] arr) {
-		Set<Integer> targets = new HashSet<>();
-		int[] sorted = Arrays.stream(arr)
-				.boxed()
-				.sorted(Comparator.reverseOrder())
-				.mapToInt(Integer::intValue)
-				.toArray();
-		int result = 0;
-		for (int num : sorted) {
-			if (targets.contains(num)) {
-				result++;
-			}
-			targets.add(num - k);
-			targets.add(num - k);
-		}
-		return result;
+		int ans = 0;
+		
+		Set<Integer> set = new HashSet<>();
+		
+        for(int i=0; i<arr.length;i++){
+            set.add(arr[i]);
+        }
+
+        for(int i=0; i<arr.length;i++){
+            if(set.contains(arr[i] + k )){
+                ans++;
+            }
+            
+           
+        }
+        
+		return ans;
 	}
 
 	public static void main(String[] args) {
